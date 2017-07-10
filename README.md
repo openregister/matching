@@ -5,6 +5,7 @@ Demo ways to match datasets.
 1. [`fuzzyjoin`](https://cran.r-project.org/web/packages/fuzzyjoin/index.html) (R)
 2. [`recordLinkage`](https://cran.r-project.org/web/packages/RecordLinkage/index.html) (R)
 3. [`csvdedupe`](https://github.com/dedupeio/csvdedupe) (Python)
+4. [`fastLink`](https://cran.r-project.org/web/packages/fastLink/index.html) (R)
 
 ## Source data
 
@@ -119,3 +120,13 @@ stratford-on-avon district council,stratford-on-avon district council
 allerdale borough council,allerdale borough council
 amber valley borough council,amber valley borough council
 ```
+
+## fastLink
+
+The [`fastLink`](https://cran.r-project.org/web/packages/fastLink/index.html)
+package is similar to `recordLinkage` in that it uses multiple columns to decide
+a match.  Under the hood it uses the `stringdist` package to match string
+columns.  It is a newer package (circa July 2017) and has friendlier
+documentation.  Wikipedia has a [useful
+page](https://en.wikipedia.org/wiki/Record_linkage#Probabilistic_record_linkage)
+on probabalistic weighting, otherwise defaults are available.
