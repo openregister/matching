@@ -74,6 +74,10 @@ are willing to upload your data to their servers.  The web interface doesn't do
 anything that isn't already pretty easy with `csvdedupe`, and the command-line
 version remembers what it learned between sessions.
 
+There's a [simple
+explanation](https://dedupe.io/documentation/how-it-works.html#matching-records)
+of how it works.
+
 To install, `pip install git+https://github.com/nacnudus/csvdedupe`, which is a
 version patched to accept tsv until [this
 issue](https://github.com/dedupeio/csvdedupe/issues/56) is closed (the patch
