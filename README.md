@@ -72,7 +72,8 @@ The [`csvdedupe`](https://github.com/dedupeio/csvdedupe) package is part of the
 `dedupe.io` ecosystem.  A web interface is available for money, as long as you
 are willing to upload your data to their servers.  The web interface doesn't do
 anything that isn't already pretty easy with `csvdedupe`, and the command-line
-version remembers what it learned between sessions.
+version remembers what it learned between sessions.  It matches on as many
+fields as are common between files, and that you specify.
 
 There's a [simple
 explanation](https://dedupe.io/documentation/how-it-works.html#matching-records)
